@@ -5,9 +5,27 @@ with a Neural Amp Modeler capture, stereo chorus, auto-swell and Eurorack CV
 control. Built with AI-assisted coding as an experiment in bringing a small NAM
 model into a guitar-and-modular setup.
 
-The ready-made firmware includes **RiffSmith Clean by Matt Hartman**, used under
-the MIT license with the author's copyright and license included. The exact
-amplifier make and model behind this capture are not documented.
+## Built on Neural Amp Modeler and RiffSmith
+
+The amp-modeling engine and included capture come from these creators:
+
+- **Neural Amp Modeler (NAM) — created by Steven Atkinson.** This firmware uses
+  [NeuralAmpModelerCore](https://github.com/sdatkinson/NeuralAmpModelerCore),
+  adapted to run on Legio. [NAM copyright notice and MIT license](licenses/NAM-Core-MIT.txt).
+- **RiffSmith Clean capture — by Matt Hartman.** The ready-made firmware embeds
+  the compatible A2-Lite model from [RiffSmith](https://github.com/hartmamt/riffsmith).
+  [Exact capture source](https://github.com/hartmamt/riffsmith/blob/228b801ccc8b518d0a1fb53a8e63355a2fbd153f/public/nam/models/riffsmith-clean.nam)
+  · [Capture copyright notice and MIT license](licenses/RiffSmith-captures-MIT.txt).
+
+**This project brings their work to Legio and adds the controls, stereo chorus,
+auto-swell and CV integration.** NAM and the capture are credited to their
+creators, not claimed as original work by this project. Both are used under MIT
+terms, with their full copyright notices and licenses included. RiffSmith's
+upstream permission explicitly covers its bundled capture weights.
+
+See [full credits and permissions](CREDITS.md) for these sources and the supporting
+projects. The exact amplifier make and model behind RiffSmith Clean are not
+documented.
 
 ## Start here
 
