@@ -11,6 +11,7 @@ amplifier make and model behind this capture are not documented.
 
 ## Start here
 
+- **Download the complete package:** [firmware, source, guides and licenses](https://github.com/adamcharleswilsonmusic-code/ampsim-for-legio/blob/main/legio-amp-sim-release.zip?raw=true). Keep the included source, copyright notices and licenses with the firmware.
 - **Install and play:** [quick-start panel guide](PANEL-GUIDE.pdf).
 - **Firmware:** [`legio-riffsmith-clean.bin`](legio-riffsmith-clean.bin).
 - **Bring your own capture:** [compatibility, build and installation guide](CUSTOM_CAPTURE.md).
