@@ -1,0 +1,87 @@
+LEGIO FIRMWARE - THIRD-PARTY NOTICES AND SOURCE AUDIT
+Reviewed 23 October 2026; release documentation refreshed 25 October 2026.
+
+CAPTURE
+RiffSmith Clean by Matt Hartman, copyright 2026, MIT License. The author explicitly
+includes the four bundled captures in the repository MIT grant (README, Credits
+and licenses). Repository pinned at 228b801ccc8b518d0a1fb53a8e63355a2fbd153f:
+https://github.com/hartmamt/riffsmith/tree/228b801ccc8b518d0a1fb53a8e63355a2fbd153f
+The A2-Lite submodel is extracted without altering configuration/weights. The
+original 48 kHz container, derived file and provenance are in approved-model/. Preserve
+the Matt Hartman copyright and MIT text with firmware containing these weights.
+The capture's exact amp identity is not documented; do not call it a Marshall.
+
+The previous AmalgamAudio capture is T3K, requiring author permission for model
+redistribution. All Amalgam model files, generated headers, device backups and
+old firmware binaries must be excluded from a public download. Being free of
+charge does not change that restriction. The public binary was verified to contain the approved weight stream. The
+restricted assets were removed before this build; deleted private weight data
+was not freshly rescanned. See MODEL-CONTENT-VERIFICATION.json for the scope.
+
+LINKED CODE AND OBLIGATIONS
+NeuralAmpModelerCore: copyright Steven Atkinson, MIT. Upstream is unmodified.
+Two generated platform adaptations are disclosed: thread-local prewarm default
+becomes a main-thread variable; trailing-weight error message is shortened.
+Keep MIT notice with copies and the generated derivative sources.
+libDaisy: copyright Electrosmith, MIT; board support by Eris Fairbanks / Olivia
+Artz Modular + Noise Engineering is credited in its header. Upstream is unmodified.
+STM32 HAL and startup: applicable BSD-3-Clause notices must accompany binaries.
+STM32 device headers / CMSIS / CMSIS-DSP: applicable Apache-2.0 notices, license
+and attribution must remain. The separate texts are copied into licenses/.
+ST USB Device Library: the actual vendored component carries SLA0044 Rev5, not
+a blanket MIT license. It permits redistribution with its conditions, including
+execution only with ST microcontrollers and preservation of its own licensing.
+Legio uses an STM32H750. Do not relicense the ST component under the project's
+license or describe the entire bundle as uniformly MIT. Include its full text.
+Eigen: principally MPL-2.0 with file-specific BSD/MINPACK/Apache notices. Build
+uses EIGEN_MPL2_ONLY; no GPL-only Eigen modules are enabled. Provide the exact
+covered headers/source and MPL text with the download (or an adequate source
+availability offer). Do not assume static linking makes MPL notices unnecessary.
+nlohmann JSON: MIT, copyright Niels Lohmann. Preserve its own MIT notice even
+when it is used only by included source/model construction paths.
+GCC libgcc / libstdc++ runtime: GPL with GCC Runtime Library Exception 3.1. The
+exception permits qualifying compiled target programs to have their own terms;
+include exception and applicable license notices. The compiler itself is not
+being redistributed. newlib/libm/libnosys carry multiple permissive notices;
+include the upstream newlib notice collection.
+TONE3000 nam-pedal reference code is MIT; retain the notice if reference-derived
+parts or repository material are included. The binary loader/old generic engine
+experiments are not linked into this firmware and are excluded from the package.
+
+CHORUS / SWELL / LOCAL APPLICATION
+The chorus is the project's local stereo_chorus.h implementation, using an
+allocated mono delay history, interpolated opposed taps, a polynomial-smoothed
+triangle LFO and a dry/wet blend. No external chorus library or copied named
+commercial chorus implementation was found in the reviewed build inputs. The
+swell, controls, gain-CV code, meters and firmware glue are local project source.
+The review identifies source provenance and licenses; it does not establish an
+exclusive ownership claim over standard DSP mathematics or certify every
+possible patent/trademark issue. Third-party names are descriptive credits,
+not endorsements.
+
+OTHER ASSETS / PACKAGING
+Manufacturer printable artwork in Downloads and source-panel.svg has no
+redistribution grant established by this audit; exclude those original files
+from a firmware release. The local panel guide is a custom reference drawing.
+Embedded Liberation fonts have a separate included font license. No manufacturer
+logos, commercial IR files or downloaded demo audio are needed by the firmware.
+The public package contains only the approved firmware, model, application
+source, guides, notices/licenses and required covered source. Private development
+files, legacy images, manufacturer printables and device backups are excluded.
+
+VALIDATION AND LIMITS
+The approved RiffSmith Lite model has the exact supported 1,871-weight topology.
+Host output matches the model source; no callback allocation, dry fallback,
+stereo chorus and original swell checks pass. The lower drive floor reaches
+inference, with old drive values and gain-CV voltage scaling preserved. The
+new public build does not incorporate the prior private capture weights in the
+checked binary scan. Firmware hardware/listening state is recorded separately.
+This is an evidence-based source/asset license review of the listed build, not
+a guarantee about unrelated files, future changes or every legal question.
+
+CUSTOM-CAPTURE BUILD RECIPE
+The local capture-preparation helper is original project code. Its supported
+configuration template is derived from the MIT-licensed RiffSmith Clean model;
+the included Matt Hartman notice applies. The helper does not grant permission
+to redistribute other captures. A user-selected capture requires its own rights
+and notices before a modified firmware is shared.

@@ -1,0 +1,15 @@
+{
+  "model": "RiffSmith Distorted (MIT), isolated test only",
+  "container_and_direct_import_passed": true,
+  "exact_header_float32_weights": true,
+  "incompatible_inputs_rejected": true,
+  "custom_firmware_build_passed": true,
+  "custom_firmware_bytes": 127024,
+  "custom_firmware_sha256": "915bcd35b390f2a6699362b4473f7e923d28fc11a80a85919c3303acee20db5b",
+  "expected_weights_in_binary": true,
+  "default_clean_weights_in_custom_binary": false,
+  "installed_firmware_unchanged": true,
+  "device_write_performed": false,
+  "clean_machine_tested": false,
+  "dependencies": "same toolchain, pinned local upstream dependencies and existing libDaisy archive"
+}

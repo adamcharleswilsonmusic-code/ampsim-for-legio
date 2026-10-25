@@ -1,0 +1,9 @@
+# Reproducible dependencies fetched by the documented setup
+/source/host-research/NeuralAmpModelerCore-current/
+/source/vendor/libDaisy/
+# Local build products and user captures
+/source/firmware/build*/
+/source/models/custom-capture.nam
+**/__pycache__/
+*.pyc
+.DS_Store

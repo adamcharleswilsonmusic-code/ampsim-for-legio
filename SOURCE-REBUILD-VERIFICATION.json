@@ -1,0 +1,10 @@
+{
+  "byte_identical": true,
+  "candidate_sha256": "c8395681635a4905c9afa0c478f1b7b3bd735cbf581725681f0f2acbbf6e081b",
+  "rebuild_sha256": "c8395681635a4905c9afa0c478f1b7b3bd735cbf581725681f0f2acbbf6e081b",
+  "device_installed": true,
+  "same_toolchain": true,
+  "dependencies": "pinned local NAM/libDaisy and existing libDaisy archive",
+  "clean_machine_tested": false,
+  "installed_sha256": "c8395681635a4905c9afa0c478f1b7b3bd735cbf581725681f0f2acbbf6e081b"
+}

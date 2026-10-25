@@ -1,0 +1,7 @@
+{
+  "binary_bytes": 126880,
+  "binary_sha256": "c8395681635a4905c9afa0c478f1b7b3bd735cbf581725681f0f2acbbf6e081b",
+  "approved_public_float32_weights_present": true,
+  "public_weights_sha256": "19b86ed2ca90ce7903be8f6b5c995f40fd0b6199670aec40dbde04069bec00f3",
+  "scope": "Candidate built solely from the approved RiffSmith source; restricted capture assets were removed before this build. No new scan of deleted private weight data was possible."
+}
