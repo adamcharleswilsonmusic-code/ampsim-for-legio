@@ -1,0 +1,26 @@
+{
+  "repository": "https://github.com/hartmamt/riffsmith",
+  "commit": "228b801ccc8b518d0a1fb53a8e63355a2fbd153f",
+  "files": {
+    "README.md": {
+      "bytes": 21073,
+      "sha256": "1b879d8af7b00616f03f1f3e4e4c71f5bdc768d5b5f4504fe42bd7aae87194b1"
+    },
+    "LICENSE": {
+      "bytes": 1069,
+      "sha256": "ccaf828b0ad6a1c64b70b2bc0a35e8f283990fbadf2bc9748679b74a8af5b5f4"
+    },
+    "public/nam/models/manifest.json": {
+      "bytes": 1329,
+      "sha256": "1d71242a65b9aca1052a921f0cce88744024d966b1ee0aebd9a717f7866e7626"
+    },
+    "public/nam/models/riffsmith-clean.nam": {
+      "bytes": 297028,
+      "sha256": "433f93c73abfc86b1ab46adc8ec7e0eaa46a7286727708880c285c10a1642741"
+    },
+    "public/nam/models/riffsmith-distorted.nam": {
+      "bytes": 294305,
+      "sha256": "ec52e16296f96fdd1d07d1aaa699e33e17df253f026f785f135080e1eb5db007"
+    }
+  }
+}
